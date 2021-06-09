@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#0DD315"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Toast"
+        android:textColor="@color/teal_200"
+        android:backgroundTint="#FFFFFF"
+        android:id="@+id/toast"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_weight="8"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="150sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Count"
+        android:textColor="@color/teal_200"
+        android:backgroundTint="#ffffff"
+        android:layout_weight="1"
+        android:id="@+id/count"/>
+
+
+
+
+</LinearLayout>
