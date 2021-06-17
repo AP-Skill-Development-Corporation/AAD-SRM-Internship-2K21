@@ -9,6 +9,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Covid19 Daily Reports "
+        android:textSize="40sp"
+        android:textColor="#E91E63"/>
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,6 +22,7 @@
     android:textColor="#000"
     android:textSize="40sp"
     android:id="@+id/tv_Date"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
