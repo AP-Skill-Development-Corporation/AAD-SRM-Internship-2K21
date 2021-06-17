@@ -16,3 +16,6 @@
 [Day-4 (10-06-2021)](https://youtu.be/d796HJQ1mxE)
 
 [Day-5 (11-06-2021)](https://youtu.be/xj11CppREUs)
+
+* [Recyclerview(MyWhatsup app pracite](https://transcripts.gotomeeting.com/#/s/ddb74ca50e359abe6b84e3c0daccc4bfa78d0e4e71b6bf5a2a2ce1560d9c3f86)
+* [Retrofit Configuaration-Covid19 API Exploring]()
