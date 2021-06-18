@@ -6,6 +6,8 @@ import androidx.core.app.NotificationCompat;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,12 +16,18 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 NotificationManager manager;
 NotificationCompat.Builder builder;
+PendingIntent pi;
+Intent i;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         manager= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        i=new Intent(this,MainActivity.class);
+        pi=PendingIntent.getActivity(this,123,i,
+                PendingIntent.FLAG_UPDATE_CURRENT);
         myNotificationChannel();
     }
 
@@ -41,6 +49,7 @@ NotificationCompat.Builder builder;
         builder.setContentText("This my notifation from AAD Internship");
         builder.setSmallIcon(R.drawable.ic_baseline_notifications_24);
         builder.setPriority(Notification.PRIORITY_HIGH);
+       builder.setContentIntent(pi);
         manager.notify(123,builder.build());
     }
 }
