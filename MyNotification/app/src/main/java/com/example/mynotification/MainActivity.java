@@ -8,6 +8,8 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -50,6 +52,9 @@ Intent i;
         builder.setSmallIcon(R.drawable.ic_baseline_notifications_24);
         builder.setPriority(Notification.PRIORITY_HIGH);
        builder.setContentIntent(pi);
+       builder.addAction(R.drawable.ic_baseline_reply_24,"Reply",pi);
+        Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.kotlin_vs_java);
+        builder.setStyle(new NotificationCompat.BigPictureStyle().bigPicture(bitmap));
         manager.notify(123,builder.build());
     }
 }
