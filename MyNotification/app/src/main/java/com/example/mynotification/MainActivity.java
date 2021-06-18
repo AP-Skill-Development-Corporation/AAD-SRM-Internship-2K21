@@ -57,4 +57,14 @@ Intent i;
         builder.setStyle(new NotificationCompat.BigPictureStyle().bigPicture(bitmap));
         manager.notify(123,builder.build());
     }
+
+    public void stopMymusic(View view) {
+        Intent myintent=new Intent(this,MyMusicService.class);
+        stopService(myintent);
+    }
+
+    public void startMyMusic(View view) {
+        Intent myintent=new Intent(this,MyMusicService.class);
+        startService(myintent);
+    }
 }
