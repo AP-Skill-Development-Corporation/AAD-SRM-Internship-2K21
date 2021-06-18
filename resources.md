@@ -19,3 +19,4 @@
 
 * [Recyclerview(MyWhatsup app pracite](https://transcripts.gotomeeting.com/#/s/ddb74ca50e359abe6b84e3c0daccc4bfa78d0e4e71b6bf5a2a2ce1560d9c3f86)
 * [Retrofit Configuaration-Covid19 API Exploring](https://transcripts.gotomeeting.com/#/s/6c39a961c0360f3d1879fa3d6c4825ac31a46dc0abb1344c03a3b83d79bd6e50)
+* [Notification and Service](https://transcripts.gotomeeting.com/#/s/ff85370a9f4fc8ff0fcf69480c37633ff671db246d8ae1397d81d538f83364ca)
