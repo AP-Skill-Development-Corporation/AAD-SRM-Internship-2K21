@@ -1,31 +1,33 @@
 package com.example.mynotification;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.PeriodicWorkRequest;
+import androidx.work.WorkManager;
 
-import android.app.Notification;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 /*NotificationManager manager;
 NotificationCompat.Builder builder;
 PendingIntent pi;
 Intent i;*/
-
+OneTimeWorkRequest oneTimeWorkRequest;
+PeriodicWorkRequest periodicWorkRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+       oneTimeWorkRequest=new OneTimeWorkRequest.Builder(SingleTimeWorker.class).build();
+periodicWorkRequest=new PeriodicWorkRequest
+        .Builder(MyPeriodicWorkRequest.class,
+        15, TimeUnit.MINUTES).build();
+
         /*manager= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         i=new Intent(this,MainActivity.class);
         pi=PendingIntent.getActivity(this,123,i,
@@ -46,6 +48,8 @@ Intent i;*/
     }*/
 
     public void showNotification(View view) {
+        WorkManager.getInstance(this).enqueue(oneTimeWorkRequest);
+    WorkManager.getInstance(this).enqueue(periodicWorkRequest);
      /*   builder=new NotificationCompat.Builder(this,"MYCHANNEL");
         builder.setContentTitle("My own Notification");
         builder.setContentText("This my notifation from AAD Internship");
