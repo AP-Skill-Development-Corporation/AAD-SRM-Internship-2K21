@@ -16,24 +16,24 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-NotificationManager manager;
+/*NotificationManager manager;
 NotificationCompat.Builder builder;
 PendingIntent pi;
-Intent i;
+Intent i;*/
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        manager= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        /*manager= (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         i=new Intent(this,MainActivity.class);
         pi=PendingIntent.getActivity(this,123,i,
                 PendingIntent.FLAG_UPDATE_CURRENT);
-        myNotificationChannel();
+        myNotificationChannel();*/
     }
 
-    private void myNotificationChannel() {
+    /*private void myNotificationChannel() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel cn=new NotificationChannel("MYCHANNEL","srm",
                     NotificationManager.IMPORTANCE_HIGH);
@@ -43,10 +43,10 @@ Intent i;
             manager.createNotificationChannel(cn);
 
         }
-    }
+    }*/
 
     public void showNotification(View view) {
-        builder=new NotificationCompat.Builder(this,"MYCHANNEL");
+     /*   builder=new NotificationCompat.Builder(this,"MYCHANNEL");
         builder.setContentTitle("My own Notification");
         builder.setContentText("This my notifation from AAD Internship");
         builder.setSmallIcon(R.drawable.ic_baseline_notifications_24);
@@ -55,7 +55,7 @@ Intent i;
        builder.addAction(R.drawable.ic_baseline_reply_24,"Reply",pi);
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.kotlin_vs_java);
         builder.setStyle(new NotificationCompat.BigPictureStyle().bigPicture(bitmap));
-        manager.notify(123,builder.build());
+        manager.notify(123,builder.build());*/
     }
 
     public void stopMymusic(View view) {
