@@ -1,5 +1,6 @@
 package com.example.employeedirectory;
 
+import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -8,8 +9,10 @@ import androidx.room.PrimaryKey;
 public class EmployeeEntity {
     @ColumnInfo(name = "empName")
     String empName;
-    @ColumnInfo(name = "empId")
+
+    @NonNull
     @PrimaryKey
+    @ColumnInfo(name = "empId")
     String empId;
     @ColumnInfo(name = "empSalary")
     String empSalary;

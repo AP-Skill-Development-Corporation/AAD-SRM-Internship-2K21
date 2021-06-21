@@ -19,18 +19,20 @@ ActivityMainBinding binding;
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_main);
         database= Room.databaseBuilder(this,EmployeeDatabase.class,"srm")
+                .allowMainThreadQueries()
                 .build();
     }
 
     public void saveData(View view) {
         entity=new EmployeeEntity();
-        entity.setEmpName(binding.etEmpName.getEditableText().toString());
-        entity.setEmpId(binding.etEmpId.getEditableText().toString());
-        entity.setEmpAddress(binding.etEmpaddress.getEditableText().toString());
-        entity.setEmpSalary(binding.etEmpSalary.getEditableText().toString());
+        entity.setEmpName(binding.etEmpName.getText().toString());
+        entity.setEmpId(binding.etEmpId.getText().toString());
+        entity.setEmpAddress(binding.etEmpaddress.getText().toString());
+        entity.setEmpSalary(binding.etEmpSalary.getText().toString());
         database.employeeDAO().insert(entity);
         Toast.makeText(this, "insert success \n"+
-                binding.etEmpName.getEditableText().toString(), Toast.LENGTH_SHORT).show();
+                binding.etEmpName.getText().toString(), Toast.LENGTH_SHORT).show();
+
 
     }
 
