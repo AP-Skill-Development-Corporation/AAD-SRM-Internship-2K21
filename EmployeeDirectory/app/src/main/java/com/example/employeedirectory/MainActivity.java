@@ -2,6 +2,7 @@ package com.example.employeedirectory;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.room.Room;
 
 import android.os.Bundle;
@@ -10,10 +11,13 @@ import android.widget.Toast;
 
 import com.example.employeedirectory.databinding.ActivityMainBinding;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 static EmployeeDatabase database;
 EmployeeEntity entity;
 ActivityMainBinding binding;
+List<EmployeeEntity> entityList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,5 +41,9 @@ ActivityMainBinding binding;
     }
 
     public void retriveData(View view) {
+        entityList=database.employeeDAO().retrive();
+        EmployeeAdapter adapter=new EmployeeAdapter(this,entityList);
+        binding.rec.setLayoutManager(new LinearLayoutManager(this));
+        binding.rec.setAdapter(adapter);
     }
 }
