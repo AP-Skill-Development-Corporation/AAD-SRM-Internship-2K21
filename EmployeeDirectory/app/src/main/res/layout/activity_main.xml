@@ -60,5 +60,27 @@
             android:id="@+id/et_empSalary"
             android:background="#fff"/>
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_margin="10dp"
+        android:onClick="saveData"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrive"
+        android:layout_margin="10dp"
+        android:onClick="retriveData"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/rec"/>
 </LinearLayout>
 </layout>
