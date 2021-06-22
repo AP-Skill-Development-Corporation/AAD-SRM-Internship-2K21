@@ -1,10 +1,12 @@
 package com.example.employeedirectory;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,6 +38,14 @@ holder.emp_id.setText(entityList.get(position).getEmpId());
 holder.name.setText(entityList.get(position).getEmpName());
 holder.address.setText(entityList.get(position).getEmpAddress());
 holder.salary.setText(entityList.get(position).getEmpSalary());
+holder.delete.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        MainActivity.database.employeeDAO().delete(entityList.get(position));
+        Toast.makeText(ct, "Deleted :"+entityList.get(position).getEmpName(), Toast.LENGTH_SHORT).show();
+    }
+});
+
 
 
     }
@@ -56,6 +66,22 @@ holder.salary.setText(entityList.get(position).getEmpSalary());
             address=itemView.findViewById(R.id.tv_Address);
             salary=itemView.findViewById(R.id.tv_salary);
             emp_id=itemView.findViewById(R.id.tv_id);
+            edit.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String e_name=name.getText().toString();
+                    String e_address=address.getText().toString();
+                    String e_salary=salary.getText().toString();
+                    String e_Id=emp_id.getText().toString();
+                    Intent i=new Intent(ct,UpdateActivity.class);
+                    i.putExtra("name_key",e_name);
+                    i.putExtra("address_key",e_address);
+                    i.putExtra("salary_key",e_salary);
+                    i.putExtra("id_key",e_Id);
+                    ct.startActivity(i);
+
+                }
+            });
         }
     }
 }
