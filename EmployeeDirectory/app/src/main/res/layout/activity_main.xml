@@ -76,7 +76,15 @@
         android:text="Retrive"
         android:layout_margin="10dp"
         android:onClick="retriveData"/>-->
+    <!--Good Morning sir/madam,
+Program:Android Application Development - Online Internship - 2021-22
+Mode:online
+College :SRM University
+Session time:9.30AM to 12.30PM
+Count:30+
+Trainers : Muneiah ,Chaithanya K
 
+Thank you..!-->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
