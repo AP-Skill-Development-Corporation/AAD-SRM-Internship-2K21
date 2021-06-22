@@ -1,5 +1,6 @@
 package com.example.employeedirectory;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -17,6 +18,7 @@ public interface EmployeeDAO {
     @Delete
     public void delete(EmployeeEntity employeeEntity);
     @Query("select * from empTable")
-    public List<EmployeeEntity> retrive();
+    public LiveData<List<EmployeeEntity>> retriveliveData();//for with livedata
+    //public List<EmployeeEntity> retrive();//for without livedata
 
 }

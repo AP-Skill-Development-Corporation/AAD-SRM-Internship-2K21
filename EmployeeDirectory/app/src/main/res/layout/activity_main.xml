@@ -69,13 +69,13 @@
         android:layout_margin="10dp"
         android:onClick="saveData"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Retrive"
         android:layout_margin="10dp"
-        android:onClick="retriveData"/>
+        android:onClick="retriveData"/>-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

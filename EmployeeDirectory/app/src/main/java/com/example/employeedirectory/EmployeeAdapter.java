@@ -41,7 +41,8 @@ holder.salary.setText(entityList.get(position).getEmpSalary());
 holder.delete.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        MainActivity.database.employeeDAO().delete(entityList.get(position));
+       // MainActivity.database.employeeDAO().delete(entityList.get(position));
+       MainActivity.viewModel.delete(entityList.get(position));
         Toast.makeText(ct, "Deleted :"+entityList.get(position).getEmpName(), Toast.LENGTH_SHORT).show();
     }
 });
