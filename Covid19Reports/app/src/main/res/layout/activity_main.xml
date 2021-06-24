@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Covid19 Daily Reports "
+        android:textSize="40sp"
+        android:textColor="#E91E63"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:textColor="#000"
+    android:textSize="40sp"
+    android:id="@+id/tv_Date"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textColor="#673AB7"
+        android:textSize="40sp"
+        android:id="@+id/tv_Country"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirmed"
+    android:textColor="#FF5722"
+    android:textSize="40sp"
+    android:id="@+id/tv_confirmed"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Active"
+    android:textColor="#F44336"
+    android:textSize="40sp"
+    android:id="@+id/tv_Acitive"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Recovered"
+    android:textColor="#4CAF50"
+    android:textSize="40sp"
+    android:id="@+id/tv_recovred"/>
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Death"
+    android:textColor="#E91E63"
+    android:textSize="40sp"
+    android:id="@+id/tv_death"/>
+
+</LinearLayout>
+</layout>
