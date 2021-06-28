@@ -3,6 +3,9 @@ package com.example.myfirebasedb;
 public class StudentModel {
     String name,email,mobile;
 
+    public StudentModel() {
+    }
+
     public StudentModel(String name, String email, String mobile) {
         this.name = name;
         this.email = email;
