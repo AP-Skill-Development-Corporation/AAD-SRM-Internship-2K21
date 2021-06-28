@@ -16,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
 import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
@@ -39,6 +40,31 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.t_name.setText(list.get(position).getName());
         holder.t_email.setText(list.get(position).getEmail());
         holder.t_mobile.setText(list.get(position).getMobile());
+        holder.t_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatabaseReference reference= FirebaseDatabase.getInstance()
+                        .getReference();
+                Query query=reference.child("student").orderByChild("mobile")
+                        .equalTo(list.get(position).getMobile());
+                final HashMap<String ,Object> map=new HashMap<>();
+                query.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        for (DataSnapshot ds:snapshot.getChildren()){
+                            map.put("mobile",123456789);
+                            ds.getRef().updateChildren(map);
+                        }
+                        Toast.makeText(ctx, "updated", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
+        });
         holder.t_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
