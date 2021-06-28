@@ -171,7 +171,7 @@
 
 </LinearLayout>
 </androidx.cardview.widget.CardView>
-``
+```
 5. Adapter
 ```JAVA
 
