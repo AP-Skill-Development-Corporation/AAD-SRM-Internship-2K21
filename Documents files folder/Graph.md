@@ -1,4 +1,9 @@
 # Graph-Reports
+
+## [suppose Refarence 1](https://github.com/PhilJay/MPAndroidChart)
+
+## [suppose Refarence 2](https://uxdesign.cc/line-chart-design-made-simple-a1b823510674)
+
 ## build.gradle file module:app
 ```XML
 add DataBinding 
