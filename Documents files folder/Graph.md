@@ -90,7 +90,7 @@ add DataBinding
         app:layout_constraintTop_toTopOf="parent" />
 ```
 
-### activity_pie_chart_actiivty
+### activity_pie_chart_activty
 ```XML
 <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pichart"
@@ -160,7 +160,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 ```
-## PieChartActiivty.java
+## PieChartActivty.java
 ```JAVA
 import androidx.appcompat.app.AppCompatActivity;
 
