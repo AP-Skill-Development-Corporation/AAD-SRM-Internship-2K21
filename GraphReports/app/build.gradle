@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.sensors"
+        applicationId "com.example.graphreports"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -36,7 +36,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-    // sensy API
-    implementation 'com.github.nisrulz:sensey:1.8.0'
+/*Display Graphs*/
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 }
