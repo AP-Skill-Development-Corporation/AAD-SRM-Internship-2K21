@@ -1,0 +1,4 @@
+#Fri Apr 09 12:32:00 IST 2021
+base.0=D\:\\Pstp_ folder\\android-pstp-aits-tirupathi\\RetrofitExample\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
