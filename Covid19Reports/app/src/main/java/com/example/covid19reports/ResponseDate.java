@@ -1,6 +1,6 @@
 package com.example.covid19reports;
 
-import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
 
 public class ResponseDate implements Serializable {
