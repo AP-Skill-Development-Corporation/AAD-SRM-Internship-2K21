@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Covid19 Reports"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec"/>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:id="@+id/tv_date"
+
+        android:textColor="#1FE627"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Country"
+        android:id="@+id/country"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#673AB7"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmed Cases"
+        android:id="@+id/confirmed"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#FF5722"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active Cases"
+        android:id="@+id/active"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#E91E63"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Recovered Cases"
+        android:id="@+id/recoverd"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#8BC34A"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deathcases"
+        android:id="@+id/death"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#03A9F4"
+
+        />-->
+
+
+</LinearLayout>
