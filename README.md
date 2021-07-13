@@ -12,7 +12,7 @@ i3 or above Processor is required
 Good Internet Connectivity
 Microphone and Speakers facility for Offline training program.
 ### Duration :
-36 Hours (2 hours each day X 18 days)
+3 hours each day X 45 days
 
 
 ## Workshop Syllabus :
