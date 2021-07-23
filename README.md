@@ -93,7 +93,8 @@ Microphone and Speakers facility for Offline training program.
             b. Pie Graph
        33. Payment Gateways
        34. AdMob
-
+       35. Youtube video player intigration 
+ 
 
 
 
