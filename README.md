@@ -1,6 +1,6 @@
 # AAD-SRM-Internship-2K21-Online
 
-# Android Application Development - Syllabus
+# Android  Application Development - Syllabus
 
 ### Introduction : 
 Mobile Apps are becoming popular day by day. Today, Everyone owns a smartphone and they do a lot of things with the help of their smartphones such as making payments, ordering groceries, playing games, chatting with friends and colleagues etc .There is huge demand in the market to develop android apps. It’s Google’s CEO Sundar Pichai's initiative to train 2 Million people to become android developers as this platform has a huge need of developers.
@@ -94,14 +94,12 @@ Microphone and Speakers facility for Offline training program.
        33. Payment Gateways
        34. AdMob
        35. Youtube video player intigration 
- 
-
 
 
 ### Course Objectives :
 - To enable the faculty/student of all Engineering Colleges to be able to develop android apps so that they can share the same knowledge to their students/friends.
 ### Entry Requirements :
-- Faculty/student attending this FDP/workshop should have a good knowledge in JAVA.
+- Faculty/student attending this FDP/workshop should have a good knowledge in JAVA(OOPS Concepts).
 
 ### Eligibility :
 - All Faculty/student who have JAVA Knowledge are eligible.
