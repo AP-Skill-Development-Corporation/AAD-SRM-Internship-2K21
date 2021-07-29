@@ -84,7 +84,7 @@ Microphone and Speakers facility for Offline training program.
             e. Touch Detector
        30. Locations
             a. Get Current Location Details
-       31. Maps
+       31. Google Maps
             a. Get Current Location 
             b. Changing Markers
             c. Adding Zoom Controls
