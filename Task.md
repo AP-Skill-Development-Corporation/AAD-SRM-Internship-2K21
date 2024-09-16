@@ -8,3 +8,5 @@
   * add another button to decreament the value and display it on the textview.
   * The 'i' value should'nt be a negative value.
   * Push the completed code to the github.     
+## Task-onDate and time Picker
+* Display the date and time with in textView 
